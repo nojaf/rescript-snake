@@ -1,6 +1,6 @@
 # ReScript Snake game
 
-This is the code made during [<video link>](#).
+This is the code made during [Building a game with ReScript & KAPLAY](https://youtu.be/iVcMILQplL0).
 
 ## Running locally
 
