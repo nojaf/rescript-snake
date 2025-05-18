@@ -1,5 +1,7 @@
 # ReScript Snake game
 
+![Preview of game](./preview.png)
+
 This is the code made during [Building a game with ReScript & KAPLAY](https://youtu.be/zUyrHXB_ImE).
 
 ## Running locally
