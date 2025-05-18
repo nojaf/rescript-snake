@@ -1,0 +1,21 @@
+{
+  "name": "snake",
+  "version": "0.0.0",
+  "scripts": {
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript -w"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "kaplay": "^3001.0.18",
+    "rescript": "12.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
