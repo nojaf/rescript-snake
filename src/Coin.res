@@ -3,34 +3,38 @@ open GameContext
 
 type t
 
-include PosComp({
+include GameObjRaw.Comp({
   type t = t
 })
 
-include RectComp({
+include Pos.Comp({
   type t = t
 })
 
-include ColorComp({
+include Rect.Comp({
   type t = t
 })
 
-include AreaComp({
+include Color.Comp({
   type t = t
 })
 
-include ZComp({
+include Area.Comp({
+  type t = t
+})
+
+include Z.Comp({
   type t = t
 })
 
 let make = (snakeHead, snakeTail) => {
   let randomPos = () => {
     let max = Constants.gameSizeF - Constants.tileSize
-    let randomX = k->randf(Constants.tileSize, max)
+    let randomX = k->Context.randf(Constants.tileSize, max)
     let valueX = randomX - randomX % Constants.tileSize
-    let randomY = k->randf(Constants.tileSize, max)
+    let randomY = k->Context.randf(Constants.tileSize, max)
     let valueY = randomY - randomY % Constants.tileSize
-    let pos = k->vec2(valueX, valueY)
+    let pos = k->Context.vec2(valueX, valueY)
     pos
   }
 
@@ -47,12 +51,12 @@ let make = (snakeHead, snakeTail) => {
   }
 
   k
-  ->Kaplay.add([
+  ->Kaplay.Context.add([
     addRect(k, Constants.tileSize, Constants.tileSize),
     addColor(k, Constants.yellow300),
     addPosFromVec2(k, coinPos()),
     addArea(k),
-    tag((Constants.Coin :> string)),
+    Context.tag((Constants.Coin :> string)),
   ])
   ->ignore
 }

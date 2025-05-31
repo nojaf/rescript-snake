@@ -4,8 +4,9 @@
     "": {
       "name": "snake",
       "dependencies": {
-        "kaplay": "^3001.0.18",
-        "rescript": "12.0.0-alpha.12",
+        "@nojaf/rescript-kaplay": "^0.1.0",
+        "kaplay": "^4000.0.0-alpha.19",
+        "rescript": "12.0.0-alpha.13",
       },
       "devDependencies": {
         "vite": "^6.3.5",
@@ -63,6 +64,18 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.4", "", { "os": "win32", "cpu": "x64" }, "sha512-nOT2vZNw6hJ+z43oP1SPea/G/6AbN6X+bGNhNuq8NtRHy4wsMhw765IKLNmnjek7GvjWBYQ8Q5VBoYTFg9y1UQ=="],
 
+    "@nojaf/rescript-kaplay": ["@nojaf/rescript-kaplay@0.1.0", "", { "peerDependencies": { "kaplay": "^4000.0.0-alpha.19", "rescript": "^12.0.0-alpha.13" } }, "sha512-RDodOGKnZ0ugiPufIeajdtkkQVc8+S8wFWU2ofT0+OYgGTA2j3Dv35VIE504MLxgBdPdwu3R+O1/aPrH6AOxDA=="],
+
+    "@rescript/darwin-arm64": ["@rescript/darwin-arm64@12.0.0-alpha.13", "", { "os": "darwin", "cpu": "arm64" }, "sha512-L0Cci52OUO88lvVWUmbpNXGNWewyFb4eoiGCkdpYmld1HNc3xh7UNfv7GwzCM/Yzij+thIDyUcuxodFsQ3PAVA=="],
+
+    "@rescript/darwin-x64": ["@rescript/darwin-x64@12.0.0-alpha.13", "", { "os": "darwin", "cpu": "x64" }, "sha512-6YZN4W+iI6IwchS/Fleq8pXo8u78eaaPRwgKtJYNc/Knt4mWBw2mBq+NrAvib3N4M3kUFo9J5h2IM4lV5RKtSg=="],
+
+    "@rescript/linux-arm64": ["@rescript/linux-arm64@12.0.0-alpha.13", "", { "os": "linux", "cpu": "arm64" }, "sha512-MrhZD/KXTF5CKi5wY2Iq0dkxIuNfgtKOX/lxKeBmSbNtZKT3uswFh277zCBn5yUS1euCSYS9KanXB/VDq4svOw=="],
+
+    "@rescript/linux-x64": ["@rescript/linux-x64@12.0.0-alpha.13", "", { "os": "linux", "cpu": "x64" }, "sha512-Rn0RMZuVptt4SIlF4eFI/iwPHbhigBtnMn471Z0pdYJpbXdtjNA2LsMTruYjzEWry33VpkYX0FU9dfIyNDNLOA=="],
+
+    "@rescript/win32-x64": ["@rescript/win32-x64@12.0.0-alpha.13", "", { "os": "win32", "cpu": "x64" }, "sha512-akpk8jaIOkiYe+J305jE6fS7+sMigzgNH/zl4fkuyr7ch2reXjp/qrUP2rUlmayBRFAUWwaLTie//ewAJtpMiw=="],
+
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.40.2", "", { "os": "android", "cpu": "arm" }, "sha512-JkdNEq+DFxZfUwxvB58tHMHBHVgX23ew41g1OQinthJ+ryhdRk67O31S7sYw8u2lTjHUPFxwar07BBt1KHp/hg=="],
 
     "@rollup/rollup-android-arm64": ["@rollup/rollup-android-arm64@4.40.2", "", { "os": "android", "cpu": "arm64" }, "sha512-13unNoZ8NzUmnndhPTkWPWbX3vtHodYmy+I9kuLxN+F+l+x3LdVF7UCu8TWVMt1POHLh6oDHhnOA04n8oJZhBw=="],
@@ -111,7 +124,7 @@
 
     "fsevents": ["fsevents@2.3.3", "", { "os": "darwin" }, "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="],
 
-    "kaplay": ["kaplay@3001.0.18", "", {}, "sha512-OjyyRBc7M0ekcHTT8EXD65K88NYuVA5kNH6NAlP2U7sXuVK5XJUWhGpvDM34SCA7+6T1jGh9OqXb30tSweM5Ow=="],
+    "kaplay": ["kaplay@4000.0.0-alpha.19", "", {}, "sha512-d81FQ5ZyS6LT+KHlPwjHIn+GXFVDNc32IA/9YUbwoWic+myhAURYp+h60U5prev9VLXA8CjfB1121F2U04s6dw=="],
 
     "nanoid": ["nanoid@3.3.11", "", { "bin": { "nanoid": "bin/nanoid.cjs" } }, "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w=="],
 
@@ -121,7 +134,7 @@
 
     "postcss": ["postcss@8.5.3", "", { "dependencies": { "nanoid": "^3.3.8", "picocolors": "^1.1.1", "source-map-js": "^1.2.1" } }, "sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A=="],
 
-    "rescript": ["rescript@12.0.0-alpha.12", "", { "bin": { "bsc": "cli/bsc.js", "rewatch": "cli/rewatch.js", "rescript": "cli/rescript.js", "bstracing": "lib/bstracing.js", "rescript-tools": "cli/rescript-tools.js" } }, "sha512-CffTYrWwg3x+iyYEUa8coaygjHcK7NH3CsqNKMvFDbZUxWWRi0JNnpFp01bfv1LdrHNIptmLgr7Df4a4FXSD5Q=="],
+    "rescript": ["rescript@12.0.0-alpha.13", "", { "optionalDependencies": { "@rescript/darwin-arm64": "12.0.0-alpha.13", "@rescript/darwin-x64": "12.0.0-alpha.13", "@rescript/linux-arm64": "12.0.0-alpha.13", "@rescript/linux-x64": "12.0.0-alpha.13", "@rescript/win32-x64": "12.0.0-alpha.13" }, "bin": { "bsc": "cli/bsc.js", "rewatch": "cli/rewatch.js", "rescript": "cli/rescript.js", "bstracing": "cli/bstracing.js", "rescript-tools": "cli/rescript-tools.js" } }, "sha512-O15nrJtn9Hj+MjfXkamRUV2jBdyYp2cdEaFsp5cmJRcXQ0hN+zqmO2RUKQ1gSID161Idex5/gDhv9PloH89gZA=="],
 
     "rollup": ["rollup@4.40.2", "", { "dependencies": { "@types/estree": "1.0.7" }, "optionalDependencies": { "@rollup/rollup-android-arm-eabi": "4.40.2", "@rollup/rollup-android-arm64": "4.40.2", "@rollup/rollup-darwin-arm64": "4.40.2", "@rollup/rollup-darwin-x64": "4.40.2", "@rollup/rollup-freebsd-arm64": "4.40.2", "@rollup/rollup-freebsd-x64": "4.40.2", "@rollup/rollup-linux-arm-gnueabihf": "4.40.2", "@rollup/rollup-linux-arm-musleabihf": "4.40.2", "@rollup/rollup-linux-arm64-gnu": "4.40.2", "@rollup/rollup-linux-arm64-musl": "4.40.2", "@rollup/rollup-linux-loongarch64-gnu": "4.40.2", "@rollup/rollup-linux-powerpc64le-gnu": "4.40.2", "@rollup/rollup-linux-riscv64-gnu": "4.40.2", "@rollup/rollup-linux-riscv64-musl": "4.40.2", "@rollup/rollup-linux-s390x-gnu": "4.40.2", "@rollup/rollup-linux-x64-gnu": "4.40.2", "@rollup/rollup-linux-x64-musl": "4.40.2", "@rollup/rollup-win32-arm64-msvc": "4.40.2", "@rollup/rollup-win32-ia32-msvc": "4.40.2", "@rollup/rollup-win32-x64-msvc": "4.40.2", "fsevents": "~2.3.2" }, "bin": { "rollup": "dist/bin/rollup" } }, "sha512-tfUOg6DTP4rhQ3VjOO6B4wyrJnGOX85requAXvqYTHsOgb2TFJdZ3aWpT8W2kPoypSGP7dZUyzxJ9ee4buM5Fg=="],
 

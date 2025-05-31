@@ -1,6 +1,6 @@
 open Kaplay
 
-let k = kaplay(
+let k = Context.kaplay(
   ~initOptions={
     width: 500,
     height: 550,

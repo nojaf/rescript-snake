@@ -12,8 +12,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "kaplay": "^3001.0.18",
-    "rescript": "12.0.0-alpha.12"
+    "@nojaf/rescript-kaplay": "^0.1.0",
+    "kaplay": "^4000.0.0-alpha.19",
+    "rescript": "12.0.0-alpha.13"
   },
   "devDependencies": {
     "vite": "^6.3.5"
