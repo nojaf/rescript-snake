@@ -1,4 +1,5 @@
-open Kaplay
+open Kaplay.Context
+open Kaplay.Types
 open GameContext
 
 type gameState = {
@@ -85,17 +86,14 @@ let game = () => {
     gameState.lastUpdate = gameState.lastUpdate + deltaTime
     if gameState.lastUpdate >= gameState.speed {
       switch gameState.directionQueue->Queue.dequeue {
-      | Some(direction)
-        if !areOppositeVectors(
-          gameState.currentDirection,
-          direction,
-        ) => gameState.currentDirection = direction
+      | Some(direction) if !areOppositeVectors(gameState.currentDirection, direction) =>
+        gameState.currentDirection = direction
       | _ => ()
       }
 
-      let nextMove = gameState.currentDirection->Vec2.scale(Constants.tileSizeVector)
+      let nextMove = gameState.currentDirection->Kaplay.Vec2.scale(Constants.tileSizeVector)
       let currentPos = snakeHead->SnakePart.getPos
-      let nextPos = currentPos->Vec2.add(nextMove)
+      let nextPos = currentPos->Kaplay.Vec2.add(nextMove)
       if gameArea->GameArea.hasPoint(nextPos) {
         snakeHead->SnakePart.setPos(nextPos)
 
@@ -118,7 +116,9 @@ let game = () => {
           snakeTail->Array.push(
             SnakePart.make(~x=currentPos.x, ~y=currentPos.y, Constants.SnakeTail),
           )
-          gameState.speed = gameState.speed - 0.1
+
+          // Game speed should never go below 0.2
+          gameState.speed = Math.max(0.2, gameState.speed - 0.05)
         }
       | _ => ()
       }

@@ -94,7 +94,7 @@ function game() {
         Coin.make(snakeHead, snakeTail);
         scoreText.text = "Score: " + gameState.score.toString();
         snakeTail.push(SnakePart.make(currentPos.x, currentPos.y, "SnakeTail"));
-        gameState.speed = gameState.speed - 0.1;
+        gameState.speed = Math.max(0.2, gameState.speed - 0.05);
       }
       
     }

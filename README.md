@@ -19,5 +19,5 @@ bunx vite
 ```
 ## KAPLAY bindings
 
-Feel free to copy [src/Kaplay.res](./src/Kaplay.res) into your own project.
-If there is enough interest I can publish an npm package for this.
+The ReScript bindings for KAPLAY are now available on npm as [@nojaf/rescript-kaplay](https://www.npmjs.com/package/@nojaf/rescript-kaplay).  
+More info can be found on [https://nojaf.com/rescript-kaplay/](https://nojaf.com/rescript-kaplay/)

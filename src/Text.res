@@ -3,24 +3,24 @@ open GameContext
 
 type t
 
-include TextComp({
+include Text.Comp({
   type t = t
 })
 
-include ColorComp({
+include Color.Comp({
   type t = t
 })
 
-include PosComp({
+include Pos.Comp({
   type t = t
 })
 
-include AnchorComp({
+include Anchor.Comp({
   type t = t
 })
 
 let make = (text, ~size, ~x, ~y): t => {
-  k->Kaplay.add([
+  k->Context.add([
     addText(
       k,
       text,

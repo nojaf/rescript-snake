@@ -3,28 +3,28 @@ open GameContext
 
 type t
 
-include PosComp({
+include Pos.Comp({
   type t = t
 })
 
-include RectComp({
+include Rect.Comp({
   type t = t
 })
 
-include ColorComp({
+include Color.Comp({
   type t = t
 })
 
-include AreaComp({
+include Area.Comp({
   type t = t
 })
 
 let make = (~x, ~y, tag): t => {
-  k->Kaplay.add([
+  k->Context.add([
     addPos(k, x, y),
     addRect(k, Constants.tileSize, Constants.tileSize),
     addColor(k, tag == Constants.SnakeHead ? Constants.red500 : Constants.red600),
     addArea(k),
-    Kaplay.tag((tag :> string)),
+    Context.tag((tag :> string)),
   ])
 }

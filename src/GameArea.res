@@ -3,16 +3,16 @@ open GameContext
 
 type t
 
-include AreaComp({
+include Area.Comp({
   type t = t
 })
 
 let make = (): t => {
-  k->Kaplay.add([
+  k->Context.add([
     addArea(
       k,
       ~options={
-        shape: k->mathRect(
+        shape: k->Context.mathRect(
           Constants.tileSizeVector,
           Constants.gameSizeF - 2. * Constants.tileSize,
           Constants.gameSizeF - 2. * Constants.tileSize,

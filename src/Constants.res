@@ -1,4 +1,4 @@
-open Kaplay
+open Kaplay.Context
 open GameContext
 
 let gameSize = 500
