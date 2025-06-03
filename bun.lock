@@ -4,7 +4,7 @@
     "": {
       "name": "snake",
       "dependencies": {
-        "@nojaf/rescript-kaplay": "^0.1.0",
+        "@nojaf/rescript-kaplay": "^0.2.0",
         "kaplay": "^4000.0.0-alpha.19",
         "rescript": "12.0.0-alpha.13",
       },
@@ -64,7 +64,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.4", "", { "os": "win32", "cpu": "x64" }, "sha512-nOT2vZNw6hJ+z43oP1SPea/G/6AbN6X+bGNhNuq8NtRHy4wsMhw765IKLNmnjek7GvjWBYQ8Q5VBoYTFg9y1UQ=="],
 
-    "@nojaf/rescript-kaplay": ["@nojaf/rescript-kaplay@0.1.0", "", { "peerDependencies": { "kaplay": "^4000.0.0-alpha.19", "rescript": "^12.0.0-alpha.13" } }, "sha512-RDodOGKnZ0ugiPufIeajdtkkQVc8+S8wFWU2ofT0+OYgGTA2j3Dv35VIE504MLxgBdPdwu3R+O1/aPrH6AOxDA=="],
+    "@nojaf/rescript-kaplay": ["@nojaf/rescript-kaplay@0.2.0", "", { "peerDependencies": { "kaplay": "^4000.0.0-alpha.19", "rescript": "^12.0.0-alpha.13" } }, "sha512-5ah2qfZ2P9vS+3qhSDkmMyzbD9A1JggZhyzuG6U3RYnLicxVIZy6l0vVsPy4ap6ZMSo4WcGqAWyGpES53+UBUQ=="],
 
     "@rescript/darwin-arm64": ["@rescript/darwin-arm64@12.0.0-alpha.13", "", { "os": "darwin", "cpu": "arm64" }, "sha512-L0Cci52OUO88lvVWUmbpNXGNWewyFb4eoiGCkdpYmld1HNc3xh7UNfv7GwzCM/Yzij+thIDyUcuxodFsQ3PAVA=="],
 
